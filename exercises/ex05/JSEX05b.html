@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- ISTE240 Exercise 5b -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Get elements from a form</title>
+
+        <script>
+            function getFormValues() {
+                var firstName = document.getElementById('fname').value;
+                var lastName = document.getElementById('lname').value;
+                alert("First Name: " + firstName + "\nLast Name: " + lastName);
+            }
+        </script>
+    </head>
+    <body>
+        <h2>JavaScript Exercise 5b </h2>
+        <form id="regForm">
+            First name: <input type="text" id="fname" value="Boo"><br>
+            Last name: <input type="text" id="lname" value="Radley"><br>
+            <input type="button" onclick="getFormValues();" value="Submit">
+        </form>
+    </body>
+</html>

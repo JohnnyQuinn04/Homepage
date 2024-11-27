@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- ISTE240 Exercise 5a -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Change Paragraph Style</title>
+
+        <script>
+            function jsStyle() {
+                var paragraph = document.getElementById('text');
+                
+                paragraph.style.color = "blue";
+                paragraph.style.fontSize = "20px";
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2>JavaScript Exercise 5a</h2>
+            <p id="text">This style of this paragraph will change when you click the button below.</p>
+        </div>
+        <div>
+            <button id="styleMe" onclick="jsStyle();">Change Style</button>
+        </div>
+    </body>
+</html>

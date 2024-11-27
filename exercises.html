@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Exercises</title>
+	
+
+	<meta charset="UTF-8" />
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<span style="font-size:70px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	<header>
+		<h1>Exercises</h1>
+	</header>
+	<main>
+		<h2>Exercise 5</h2>
+		<a href="exercises\ex05\exercises.html">EX05</a>
+		
+		<h2>Exercise 8</h2>
+		<a href="exercises\ex05\exercises.html">EX05</a>
+	</main>
+	<div id="myNav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+			<a href="exercises.html">Exercises</a>
+			<a href="#">Contact</a>
+		</div>
+
+	</div>
+
+	<!-- Use any element to open/show the overlay navigation menu -->
+	
+	<script>
+		function openNav() {
+		  document.getElementById("myNav").style.height = "100%";
+		}
+		
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		}
+		</script>
+
+	<footer>
+		<i>Website Development Fall 2022 Johnny Quinn © 2022</i>
+	</footer>
+</body>
+
+</html>

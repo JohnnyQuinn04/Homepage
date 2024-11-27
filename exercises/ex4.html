@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Homepage/ex4.css">
+
+    <title>A Web Page</title>
+</head>
+<body>
+
+    <!-- Johnny Quinn 09/23 -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Travel Tips</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h1>Plan Your Next Adventure</h1>
+    <p>Fill out the form below to start planning your dream vacation!</p>
+
+    <form action="ex04.html" method="GET">
+        <label for="howMany">How many travelers?</label>
+        <input type="number" id="howMany" name="howMany" min="1" required>
+        <br><br>
+
+        <label for="whenVisit">Preferred travel date:</label>
+        <input type="date" id="whenVisit" name="whenVisit" required>
+        <br><br>
+
+        <fieldset>
+            <legend>Select your budget:</legend>
+            <input type="radio" id="budgetLow" name="budget" value="low" required>
+            <label for="budgetLow">Low</label><br>
+            <input type="radio" id="budgetMedium" name="budget" value="medium">
+            <label for="budgetMedium">Medium</label><br>
+            <input type="radio" id="budgetHigh" name="budget" value="high">
+            <label for="budgetHigh">High</label>
+        </fieldset>
+
+        <label for="tripLength">Trip Length (in days):</label>
+        <input type="range" id="tripLength" name="tripLength" min="1" max="10" value="7">
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

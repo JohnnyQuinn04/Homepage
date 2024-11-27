@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Multiply and Divide</title>
+
+        <style>
+            body {
+                margin-left: 100px;
+            }
+        </style>
+
+        <script>
+            // Code two functions multiply and divide functions here
+                // Hints:
+                    // When you get a value out of an input, you are getting a string.  To get a number, use parseInt()
+                    // When you want to output something into the HTML you can use .innerHTML - like document.getElementById("result").innerHTML= "fred";
+                    function multiply() {
+                        var firstOperand = parseInt(document.getElementById("firstoperand").value);
+                        var secondOperand = parseInt(document.getElementById("secondoperand").value);
+        
+                        var result = firstOperand * secondOperand;
+                        document.getElementById("result").innerHTML = result;
+                    }
+        
+                    function divide() {
+                        var firstOperand = parseInt(document.getElementById("firstoperand").value);
+                        var secondOperand = parseInt(document.getElementById("secondoperand").value);
+        
+                        if (secondOperand === 0) {
+                            document.getElementById("result").innerHTML = "Cannot divide by zero!";
+                        } else {
+                            var result = firstOperand / secondOperand;
+                            document.getElementById("result").innerHTML = result;
+                        }
+                    }
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <h2>JavaScript Exercise 5d </h2>
+        </div>
+        <form>
+            <input type="text" id="firstoperand" placeholder="First Operand"><br>
+            <input type="text" id="secondoperand" placeholder="Second Operand"><br>
+            <input type="button" onclick="divide()" value="Divide">
+            <input type="button" onclick="multiply()" value="Multiply">
+            <p>The answer: <span id="result"></span></p>
+        </form>
+    </body>
+</html>

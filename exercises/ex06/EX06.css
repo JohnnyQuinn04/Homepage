@@ -1,0 +1,11 @@
+#text {
+    left: 0;
+    position: relative;
+}
+
+
+#colorDiv {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+

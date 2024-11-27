@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<title>Johnny Quinn Landing Page </title>
+	
+
+	<meta charset="UTF-8" />
+	<link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<span style="font-size:70px;cursor:pointer" onclick="openNav()">&#9776; </span>
+	<header>
+		<h1>Johnny Quinn's Website</h1>
+	</header>
+	<img src="me.jpg" alt="me" width="400" height="300">
+	<main>
+		<h2>About Me</h2>
+		<p>
+			Hello! My name is Johnny Quinn and I am currently a 3rd year student at rit. I am pursuing a assosiate degree in CIT and a bachelor's in Software Engineering.
+		</p>
+
+	</main>
+	<div id="myNav" class="overlay">
+
+		<!-- Button to close the overlay navigation -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+		<!-- Overlay content -->
+		<div class="overlay-content">
+			<a href="index.html">Home</a>
+			<a href="projects.html">Projects</a>
+			<a href="about.html">About</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+
+	</div>
+
+	<!-- Use any element to open/show the overlay navigation menu -->
+	
+	<script>
+		function openNav() {
+		  document.getElementById("myNav").style.height = "100%";
+		}
+		
+		function closeNav() {
+		  document.getElementById("myNav").style.height = "0%";
+		}
+		</script>
+
+	<footer>
+		<i>Website Development Fall 2022 Johnny Quinn © 2022</i>
+	</footer>
+</body>
+
+</html>
